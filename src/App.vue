@@ -28,7 +28,11 @@ promise.then(function (response) {
 
 <template>
   <div>
-    {{ spese }}
+
+    <h1 className="text-3xl font-bold">
+      Spesa App!
+    </h1>
+    <!-- {{ spese }} -->
 
     <p v-for="spesa in spese.documents" :key="spesa.$id">
       {{ spesa.prodotto }} - {{ spesa.quantita }} - {{ spesa.comprato }} - {{ spesa.note }}
